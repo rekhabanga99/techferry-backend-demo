@@ -12,7 +12,6 @@ router.get('/posts', isAuth, feedController.getPosts);
 // POST /feed/post
 router.post(
   '/post',
-  isAuth,
   [
     body('title')
       .trim()
@@ -28,7 +27,7 @@ router.get('/post/:postId', feedController.getPost);
 
 router.put(
   '/post/:postId',
-  isAuth,
+ 
   [
     body('title')
       .trim()
