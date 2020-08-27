@@ -1,0 +1,6 @@
+{
+    "env":{
+        "MONGODB":"mongodb://localhost:27017/messages?authSource=admin"
+        
+    }
+}
